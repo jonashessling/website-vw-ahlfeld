@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Volkswagen-Vertragspartner und Audi-Service-Partner in Schenefeld. Gebrauchtwagen aller Marken." />
+    <title>Autohaus Werner Ahlfeld – Ihr VW-Partner in Schenefeld</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <nav class="navbar py-3 navbar-expand-lg sticky-top">
+      <div class="container">
+        <a href="/" class="navbar-brand"><img src="../assets/images/placeholder.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <img src="../assets/images/placeholder.png" alt="">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1">
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-4" aria-current="page" href="/">Startseite</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-4" href="/index.html#neuwagen">Neuwagen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-4" href="/gebrauchtwagen/">Gebrauchtwagen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-0 me-lg-4" href="/index.html#service">Service & Zubehör</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle me-0 me-lg-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Kontakt</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/index.html#kontakt">Anfahrt</a></li>
+                  <li><a class="dropdown-item" href="/kontaktformular">Kontaktformular</a></li>
+                  <li><a class="dropdown-item" href="/servicetermin">Servicetermin</a></li>
+                  <li><a class="dropdown-item" href="/index.html#kontakt">Notdienstrufnummer</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-lg-0" href="/index.html#karriere">Karriere</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-start text-white">
+            <span class="eyebrow-white mb-3">Kontakt</span>
+            <h1>Wir sind für Sie da!</h1>
+            <p>
+              Sie haben Fragen zu unseren Produkten oder Services? 
+              Kontaktieren Sie uns rund um die Uhr über unser untern aufgeführtes Kontaktformular oder per Mail. 
+              Telefonischen erreichen Sie uns Montag - Freitag zu unsere Sprechzeiten von 07:30 - 18:00 Uhr.
+            </p>
+            <div class="button-container">
+              <a href="#kontaktformular" class="btn btn-white me-2">Zum Kontaktformular</a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 order-1 order-lg-2 mb-4 mb-lg-0 px-0 px-sm-3">
+            <img src="../assets/images/placeholder.png" alt="VW Golf" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontaktformular">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <span class="eyebrow-dark">Kontaktformular</span>
+                    <h2 class="mt-3">Erreichen Sie uns rund um die Uhr über unser Formular</h2>
+                    <p>
+                        Kontaktieren Sie uns einfach und rund um die Uhr über unser Kontaktformular. 
+                        Nach erhalt Ihrer Anfrage, wird sich unser Team direkt um das Anliegen kümmern.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="contact-form p-4 text-white">
+                        <form name="kontaktformular" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="kontaktformular" />
+                            <input type="hidden" name="bot-field" />
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold">Anrede</label>
+                                <div class="d-flex gap-4">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="anrede" id="anrede-mann" value="Mann">
+                                        <label class="form-check-label" for="anrede-mann">Mann</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="anrede" id="anrede-frau" value="Frau">
+                                        <label class="form-check-label" for="anrede-frau">Frau</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <label for="vorname" class="form-label">Vorname*</label>
+                                    <input type="text" class="form-control" id="vorname" name="vorname" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="nachname" class="form-label">Nachname*</label>
+                                    <input type="text" class="form-control" id="nachname" name="nachname" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="strasse" class="form-label">Straße</label>
+                                    <input type="text" class="form-control" id="strasse" name="strasse">
+                                </div>
+                                <div class="col-12">
+                                    <label for="plz-ort" class="form-label">PLZ / Ort</label>
+                                    <input type="text" class="form-control" id="plz-ort" name="plz-ort">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="telefon" class="form-label">Telefon*</label>
+                                    <input type="tel" class="form-control" id="telefon" name="telefon" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label">E-Mail*</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="nachricht" class="form-label">Ihre Mitteilung</label>
+                                    <textarea class="form-control" id="nachricht" name="nachricht" rows="5"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-white-border">Nachricht senden</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12 text-white">
+            <h2 class="h5 mb-5">Autohaus Ahlfeld.</h2>
+          </div>
+          <div class="col-lg-3 col-12 text-white mb-3 mb-lg-0">
+            <h2 class="h5">Bereiche</h2>
+            <a href="/">Startseite</a>
+            <br>
+            <a href="/index.html#neuwagen">Neuwagen</a>
+            <br>
+            <a href="/gebrauchtwagen/">Gebrauchtwagen</a>
+            <br>
+            <a href="/index.html#service">Service & Zubehör</a>
+            <br>
+            <a href="/index.html#karriere">Karriere</a>
+          </div>
+          <div class="col-lg-3 col-12 text-white mb-3 mb-lg-0">
+            <h2 class="h5">Kontakt</h2>
+            <a href="/kontaktformular/">Kontaktformular</a>
+            <br>
+            <a href="servicetermin/">Servicetermin</a>
+            <br>
+            <a href="/index.html#kontakt">Anfahrt</a>
+            <br>
+            <a href="/index.html#kontakt">Notdienstrufnummer</a>
+          </div>
+          <div class="col-lg-3 col-12 text-white">
+            <h2 class="h5">Rechtliches</h2>
+            <a href="/impressum/">Impressum</a>
+            <br>
+            <a href="/datenschutz/">Datenschutzerklärung</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

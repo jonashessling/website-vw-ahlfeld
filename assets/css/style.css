@@ -1,0 +1,330 @@
+:root {
+    --dark: #0A1429;
+    --light-blue: #6599FF;
+    --bright-blue: #F3F7FB;
+    --white: #fff;
+    --light: #e9ecef;
+    --fs-h1: clamp(2rem, 1.59rem + 2.04vw, 3.125rem);
+    --fs-h2: clamp(1.625rem, 1.3rem + 1.59vw, 2.5rem);
+    --fs-h3: clamp(1.375rem, 1.14rem + 1.13vw, 2rem);
+    --fs-h4: clamp(1.25rem, 1.11rem + 0.68vw, 1.625rem);
+    --fs-h5: clamp(1.1875rem, 1.11rem + 0.34vw, 1.375rem);
+    --fs-body: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: var(--fs-body);
+    line-height: 1.5;
+    font-family: var(--font-body) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section, footer {
+    padding: 100px 0;
+}
+
+img {
+    border-radius: 2px;
+}
+
+a {
+    font-size: var(--fs-body) !important;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+h1, .h1 {
+    font-size: var(--fs-h1);
+    font-family: var(--font-heading) !important;
+}
+
+h2, .h2 {
+    font-size: var(--fs-h2);
+    font-family: var(--font-heading) !important;
+}
+
+h3, .h3 {
+    font-size: var(--fs-h3);
+    font-family: var(--font-heading) !important;
+}
+
+h4, .h4 {
+    font-size: var(--fs-h4);
+    font-family: var(--font-heading) !important;
+}
+
+h5, .h5 {
+    font-size: var(--fs-h5);
+    font-family: var(--font-heading) !important;
+}
+
+h6, .h6 {
+    font-size: var(--fs-body);
+    font-family: var(--font-heading) !important;
+}
+
+.text-vw-blue {
+    color: var(--dark) !important;
+}
+
+.btn-white {
+    border: 1px solid #fff;
+    background-color: #fff;
+    border-radius: 2px;
+    color: var(--dark);
+    padding: 8px 30px;
+}
+
+.btn-white:hover {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.btn-white-border {
+    border: 1px solid #fff;
+    background-color: transparent;
+    border-radius: 2px;
+    color: #fff;
+    padding: 8px 30px;
+}
+
+.btn-white-border:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: var(--dark);
+}
+
+.btn-dark {
+    border: 1px solid var(--dark);
+    background-color: var(--dark);
+    border-radius: 2px;
+    color: #fff;
+    padding: 8px 30px;
+}
+
+.btn-dark:hover {
+    border: 1px solid var(--dark);
+    background-color: transparent;
+    color: var(--dark);
+}
+
+.btn-dark-border {
+    border: 1px solid var(--dark);
+    background-color: transparent;
+    border-radius: 2px;
+    color: var(--dark);
+    padding: 8px 30px;
+}
+
+.btn-dark-border:hover {
+    border: 1px solid var(--dark);
+    background-color: var(--dark);
+    color: #fff;
+}
+
+.eyebrow-white {
+    padding: 2px 20px;
+    font-size: 16px;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 100px;
+}
+
+.eyebrow-dark {
+    padding: 2px 20px;
+    font-size: 16px;
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    border-radius: 100px;
+}
+
+/*-------------------------------------------------------------------------------------- NAVBAR */
+
+.navbar {
+    background-color: var(--white);
+}
+
+.navbar-brand img,
+.offcanvas-header img {
+    width: 40px;
+}
+
+.nav-link {
+    font-size: 16px !important;
+    color: var(--dark) !important;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid var(--light) !important;
+}
+
+.offcanvas-header img {
+    padding: 5px 0;
+}
+
+.offcanvas-body {
+    padding-top: 8px;
+}
+
+.navbar-toggler,
+.btn-close {
+    border: none;
+    box-shadow: none !important;
+    padding: 0;
+}
+
+.navbar-toggler i {
+    color: var(--dark) !important;
+    font-size: 30px;
+}
+
+.navbar .dropdown-item {
+    font-size: 16px !important;
+}
+
+.dropdown-menu {
+    border-radius: 2px !important;
+    border: none;
+}
+
+.dropdown-item:hover {
+    background-color: var(--dark);
+    color: var(--white);
+    transition: .3s;
+}
+
+/*-------------------------------------------------------------------------------------- HERO-SECTION */
+
+.hero-section {
+    background-color: var(--dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*-------------------------------------------------------------------------------------- SERVICE-SECTION */
+
+.service-card {
+    border-radius: 2px;
+    border: 1px solid var(--light);
+    padding: 30px;
+    transition: .3s;
+}
+
+.service-card:hover {
+    border: 1px solid var(--dark);
+}
+
+/*-------------------------------------------------------------------------------------- KONTAKT-SECTION */
+
+.kontakt-card {
+    border-radius: 2px;
+    border: 1px solid var(--light);
+    padding: 30px;
+    transition: .3s;
+}
+
+.kontakt-card:hover {
+    border: 1px solid var(--dark);
+}
+
+.contact-form {
+    background-color: var(--dark);
+    border: 1px solid var(--light);
+    border-radius: 2px;
+    padding: 30px;
+}
+
+.contact-form .form-label {
+    font-weight: 600;
+}
+
+.contact-form .form-control,
+.contact-form .form-check-input,
+.contact-form textarea {
+    border-radius: 2px;
+}
+
+.contact-form .btn {
+    min-width: 180px;
+}
+
+.map-container {
+    border-radius: 2px;
+    border: 1px solid var(--light);
+    overflow: hidden;
+}
+ 
+.map-container iframe {
+    display: block;
+    filter: grayscale(100%) contrast(90%);
+    transition: filter .3s;
+}
+ 
+.map-container:hover iframe {
+    filter: grayscale(0%);
+}
+
+/*-------------------------------------------------------------------------------------- FOOTER-SECTION */
+
+footer {
+    background-color: var(--dark);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+/*-------------------------------------------------------------------------------------- MEDIAQUERY: */
+
+@media (max-width: 575.9px) {
+    section, footer {
+        padding: 50px 0;
+    }
+
+    .hero-section {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    section img {
+        height: 70vh !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+}
+
+@media (max-width: 991.9px) {
+    .nav-link {
+        font-size: 20px !important;
+    }
+
+    .navbar .dropdown-item {
+        font-size: 20px !important;
+    }
+}
