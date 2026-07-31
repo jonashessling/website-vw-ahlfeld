@@ -280,12 +280,6 @@ h6, .h6 {
  
 .map-container iframe {
     display: block;
-    filter: grayscale(100%) contrast(90%);
-    transition: filter .3s;
-}
- 
-.map-container:hover iframe {
-    filter: grayscale(0%);
 }
 
 /*-------------------------------------------------------------------------------------- FOOTER-SECTION */
