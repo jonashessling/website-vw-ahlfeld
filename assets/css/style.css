@@ -1,3 +1,42 @@
+/* VW Webfonts */
+@font-face {
+    font-family: 'VW Head';
+    src: url('../font/VW_Webfonts/VWHeadWeb-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('../font/VW_Webfonts/VWHeadWeb-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('../font/VW_Webfonts/VWHeadWeb-ExtraBold.woff2') format('woff2'),
+         url('../font/VW_Webfonts/VWHeadWeb-ExtraBold.woff') format('woff');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'VW Text';
+    src: url('../font/VW_Webfonts/VWTextWeb-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'VW Text';
+    src: url('../font/VW_Webfonts/VWTextWeb-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'VW Text';
+    src: url('../font/VW_Webfonts/VWTextWeb-Light.woff2') format('woff2'),
+         url('../font/VW_Webfonts/VWTextWeb-Light.woff') format('woff');
+    font-weight: 300;
+}
+
 :root {
     --dark: #11192e;
     --light-blue: #6599FF;
@@ -10,8 +49,8 @@
     --fs-h4: clamp(1.25rem, 1.11rem + 0.68vw, 1.625rem);
     --fs-h5: clamp(1.1875rem, 1.11rem + 0.34vw, 1.375rem);
     --fs-body: clamp(1rem, 0.95rem + 0.22vw, 1.125rem);
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'VW Head', sans-serif;
+    --font-body: 'VW Text', sans-serif;
 }
 
 body {
