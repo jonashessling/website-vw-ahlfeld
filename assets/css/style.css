@@ -60,6 +60,7 @@ body {
     font-size: var(--fs-body);
     line-height: 1.5;
     font-family: var(--font-body) !important;
+    color: var(--dark);
 }
 
 html {
@@ -92,6 +93,7 @@ h6,
 .h6 {
     margin-top: 0;
     line-height: 1.2;
+    color: var(--dark);
 }
 
 h1, .h1 {
@@ -258,9 +260,10 @@ h6, .h6 {
 
 .hero-section {
     background-color: var(--dark);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+.hero-section h1 {
+    color: var(--white);
 }
 
 /*-------------------------------------------------------------------------------------- SERVICE-SECTION */
@@ -326,6 +329,10 @@ footer {
     background-color: var(--dark);
 }
 
+footer h2 {
+    color: var(--white) !important;
+}
+
 footer a {
     text-decoration: none;
     color: var(--light);
@@ -348,6 +355,7 @@ footer a {
         height: 70vh !important;
         object-fit: cover !important;
         object-position: center !important;
+        width: 100%;
     }
 }
 
