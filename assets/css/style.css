@@ -208,6 +208,36 @@ h6, .h6 {
     background-color: var(--white);
 }
 
+.navbar-brand-logo {
+    width: 700px;
+    display: inline-block;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar-brand {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.service-logos {
+    display: flex;
+    align-items: center;
+}
+
+.service-logo {
+    height: 40px;
+    display: inline-block;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
 .navbar-brand img,
 .offcanvas-header img {
     width: 40px;
@@ -347,6 +377,10 @@ footer a {
 
     .hero-section {
         padding-top: 0;
+    }
+
+    .service-logo {
+        height: 30px;
     }
 }
 
